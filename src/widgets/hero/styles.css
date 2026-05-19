@@ -1,0 +1,30 @@
+:root {
+  --background-color: #f0f1eb;
+}
+
+section {
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.round-text {
+  width: 80px;
+  height: auto;
+  animation-name: rotate;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

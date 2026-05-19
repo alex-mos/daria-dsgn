@@ -7,11 +7,24 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "css:lint": "stylelint ./src/**/*.css",
+    "css:lint:fix": "stylelint --fix ./src/**/*.css",
+    "js:lint": "",
+    "js:lint:fix": "",
+    "prettier": "prettier --write ./src/**/*",
+    "build": "astro build && prettier --write --ignore-path .prettierignore dist"
   },
   "dependencies": {
-    "astro": "^6.3.5"
+    "astro": "6.3.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.5.0",
+    "postcss": "8.5.15",
+    "postcss-preset-env": "11.3.0",
+    "prettier": "3.8.3",
+    "stylelint": "17.11.1",
+    "stylelint-config-standard": "40.0.0"
   }
 }

@@ -1,0 +1,10 @@
+---
+const {variant = "primary"} = Astro.props
+---
+<style>
+@import './styles.css';
+</style>
+
+<button class={variant}>
+  <slot/>
+</button>

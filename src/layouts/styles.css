@@ -1,5 +1,10 @@
+:root {
+  --background-color: #f0f1eb;
+}
+
 html,
 body {
   margin: 0;
   font-family: "Geist Mono", monospace;
+  background-color: var(--background-color);
 }

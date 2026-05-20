@@ -23,4 +23,5 @@ export default defineConfig({
     },
   },
   outDir: "./docs",
+  base: '/daria-dsgn/',
 })

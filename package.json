@@ -14,7 +14,7 @@
     "js:lint": "",
     "js:lint:fix": "",
     "prettier": "prettier --write ./src/**/*",
-    "build": "astro build && prettier --write --ignore-path .prettierignore dist"
+    "build": "astro build && prettier --write --ignore-path .prettierignore docs"
   },
   "dependencies": {
     "astro": "6.3.5"

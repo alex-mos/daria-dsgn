@@ -1,7 +1,40 @@
-button {
+.btn {
+  display: inline-flex;
+  gap: 12px;
+  padding: 12px 20px;
+  font-size: 16px;
+  letter-spacing: 0.08em; /* 8% = 0.08em */
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  cursor: pointer;
+
   &.primary {
+    color: white;
+    background-color: #0B1215;
+
+    &:hover {
+      background-color: #2448FF;
+    }
+
+    &:active {
+      background-color: #2140DA;
+    }
   }
 
   &.secondary {
+    color: black;
+    background-color: white;
+
+    &:hover {
+      color: white;
+      background-color: #2448FF;
+    }
+
+    &:active {
+      color: white;
+      background-color: #2140DA;
+    }
   }
 }

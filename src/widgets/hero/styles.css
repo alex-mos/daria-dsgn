@@ -11,6 +11,11 @@ h1 {
   text-transform: uppercase;
 }
 
+.button-chevron {
+  width: 6px;
+  height: auto;
+}
+
 .round-text {
   width: 80px;
   height: auto;

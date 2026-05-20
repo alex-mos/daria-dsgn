@@ -1,10 +1,15 @@
 ---
-const {variant = "primary"} = Astro.props
+const {variant = "primary", isLink = false, href = ""} = Astro.props
 ---
 <style>
 @import './styles.css';
 </style>
 
-<button class={variant}>
+{ isLink ?
+<a class={`btn ${variant}`} href={href}>
   <slot/>
-</button>
+</a>
+  :
+<button class={`btn ${variant}`}>
+  <slot/>
+</button>}

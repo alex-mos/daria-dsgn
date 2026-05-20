@@ -1,6 +1,7 @@
 ---
 import Button from "@/ui/button/Button.astro"
 import roundText from "./images/round-text.svg?url"
+import ChevronRight from "./images/chevron-right.svg"
 ---
 <style>
 @import './styles.css';
@@ -11,8 +12,13 @@ import roundText from "./images/round-text.svg?url"
     <div>
       <h1>Daria Yudashkina</h1>
       <img src={roundText} class="round-text" alt="round text"/>
-      <Button>Смотреть проекты</Button>
-      <Button>Скачать CV</Button>
+      <Button isLink={true} href="#">
+        Смотреть проекты
+        <ChevronRight class="button-chevron"/>
+      </Button>
+      <Button variant="secondary" isLink={true} href="#">
+        Скачать CV
+      </Button>
     </div>
   </div>
 </section>

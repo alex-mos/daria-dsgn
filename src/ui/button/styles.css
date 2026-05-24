@@ -8,12 +8,12 @@
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   cursor: pointer;
 
   &.primary {
-    color: white;
-    background-color: #0B1215;
+    color: var(--background-color);
+    background-color: var(--offblack-color);
 
     &:hover {
       background-color: #2448FF;
@@ -26,16 +26,19 @@
 
   &.secondary {
     color: black;
-    background-color: white;
+    background-color: transparent;
+    border: 1px solid var(--offblack-color);
 
     &:hover {
-      color: white;
+      color: var(--background-color);
       background-color: #2448FF;
+      border: 1px solid #2448FF;
     }
 
     &:active {
-      color: white;
+      color: var(--background-color);
       background-color: #2140DA;
+      border: 1px solid #2140DA;
     }
   }
 }

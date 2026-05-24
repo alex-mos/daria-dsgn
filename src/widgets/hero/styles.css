@@ -4,17 +4,42 @@
 }
 
 .container {
-  margin: 0 10px;
-  border: 1px solid #0B1215;
+  min-width: 340px;
+  margin: 0;
+  border: 1px solid var(--offblack-color);
+
+  @media (width >= 370px) {
+    margin: 0 10px;
+  }
+}
+
+.lg-none {
+  display: block;
+
+  @media (width >= 960px) {
+    display: none;
+  }
 }
 
 header {
   padding: 27px 20px;
-  border-bottom: 1px solid #0B1215;
+  border-bottom: 1px solid var(--offblack-color);
+
+  @media (width >= 960px) {
+    padding: 25px 32px;
+  }
 }
 
 main {
   padding-block: 40px 27px;
+
+  @media (width >= 960px) {
+    padding: 56px 40px;
+  }
+}
+
+.main-content {
+  position: relative;
 }
 
 footer {
@@ -22,14 +47,34 @@ footer {
 }
 
 h1 {
+  margin-top: 0;
+  margin-bottom: 12px;
   text-align: center;
   font-size: 44px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (width >= 960px) {
+    text-align: left;
+  }
 }
 
-.japanese {
+.japanese-name {
+  margin-bottom: 24px;
+  text-align: center;
 
+  @media (width >= 960px) {
+    text-align: left;
+  }
+}
+
+.role {
+  margin-bottom: 40px;
+  text-align: center;
+
+  @media (width >= 960px) {
+    text-align: left;
+  }
 }
 
 .buttons-wrapper {
@@ -40,8 +85,18 @@ h1 {
   padding: 0 36px;
   gap: 24px;
 
+  @media (width >= 960px) {
+    flex-direction: row;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
   .btn {
     width: 270px;
+
+    @media (width >= 960px) {
+      width: auto;
+    }
   }
 }
 
@@ -52,17 +107,27 @@ h1 {
 
 .city {
   text-align: center;
+
+  @media (width >= 960px) {
+    display: none;
+  }
 }
 
 .round-text {
   display: none;
 
-  width: 80px;
-  height: auto;
-  animation-name: rotate;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  @media (width >= 960px) {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 80px;
+    height: auto;
+    animation-name: rotate;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
 }
 
 @keyframes rotate {

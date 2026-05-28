@@ -2,7 +2,7 @@
 import Button from "@/ui/button/Button.astro"
 import roundText from "./images/round-text.svg?url"
 import ChevronRight from "./images/chevron-right.svg"
-import qr from "./images/qr.png"
+import qr from "./images/qr.svg?url"
 ---
 <style>
 @import './styles.css';
@@ -11,7 +11,15 @@ import qr from "./images/qr.png"
 <section class="hero">
   <div class="container">
     <header>
-      portfolio / ux / product design
+      <div class="header-content-mobile">
+        portfolio / ux / product design
+      </div>
+
+      <div class="header-content-desktop">
+        <div>Portfolio / 2026</div>
+        <div>プロダクトデザイナー</div>
+        <div>Открыта к сотрудничеству</div>
+      </div>
     </header>
 
     <main>
@@ -26,7 +34,7 @@ import qr from "./images/qr.png"
         </div>
 
         <div class="bottom">
-          <img src={qr.src} alt="qr code favorite music playlist link">
+          <img src={qr} alt="qr code favorite music playlist link">
 
           <div>
             55°01′50″ N<br>
@@ -39,7 +47,7 @@ import qr from "./images/qr.png"
         <div class="central-panel-content">
           <h1>
             Daria
-            <div class="lg-none"></div>
+            <div class="phone"></div>
             Yudashkina
           </h1>
 

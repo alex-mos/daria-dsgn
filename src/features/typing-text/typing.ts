@@ -1,7 +1,7 @@
 const strings = [
   "Дизайн Менеджер",
-  "Продуктовый дизайнер",
-  "Художник-график"
+  "UX дизайнер",
+  "Product дизайнер",
 ]
 
 const el = document.querySelector<HTMLElement>(".text")!

@@ -1,15 +1,15 @@
-/*.phone {*/
-/*  display: unset;*/
+.underline {
+  color: var(--offblack-color);
+  padding-bottom: 1px;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.3s ease;
 
-/*  @media (width >= 960px) {*/
-/*    display: none;*/
-/*  }*/
-/*}*/
+  &:hover {
+    background-size: 100% 2px;
+  }
+}
 
-/*.desktop {*/
-/*  display: none;*/
-
-/*  @media (width >= 960px) {*/
-/*    display: unset;*/
-/*  }*/
-/*}*/

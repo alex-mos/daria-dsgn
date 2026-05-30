@@ -9,7 +9,11 @@
   margin: 0 auto;
   border: 1px solid var(--offblack-color);
 
-  @media (width >= 370px) {
+  @media (width >= 360px) {
+    margin: 0 10px;
+  }
+
+  @media (width >= 1160px) {
     margin: 0 auto;
   }
 }
@@ -155,6 +159,7 @@ h1 {
 }
 
 .role {
+  display: flex;
   margin-bottom: 40px;
   text-align: center;
 
@@ -162,6 +167,26 @@ h1 {
     text-align: left;
   }
 }
+
+.cursor {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  width: 6px;
+  height: 17px;
+  background-color: #2448FF;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 
 .buttons-wrapper {
   display: flex;

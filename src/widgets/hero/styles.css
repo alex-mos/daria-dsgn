@@ -210,6 +210,12 @@ h1 {
   }
 }
 
+.open-to-work {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .button-chevron {
   width: 6px;
   height: auto;
